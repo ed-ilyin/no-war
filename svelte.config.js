@@ -1,5 +1,5 @@
 import preprocess from 'svelte-preprocess';
- import adapter from '@sveltejs/adapter-node';
+import adapter from '@sveltejs/adapter-node';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -8,7 +8,7 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-                adapter: adapter({ out: 'build' }),
+		adapter: adapter({ out: 'build' }),
 
 		// ## This part is necessary for SMUI!
 		vite: {
